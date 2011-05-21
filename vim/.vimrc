@@ -43,6 +43,13 @@ vnoremap <tab> %
 
 set wrap
 set colorcolumn=80
+if has("gui_win32")
+	set guifont=Consolas:h10:cANSI
+elseif has("gui_gtk2")
+	set guifont=Monospace:h10
+else
+	set guifont=Menlo:h11.00
+endif
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>
