@@ -1,0 +1,9 @@
+# This is a Mercurial configuration file.
+[ui]
+username = Volodymyr Sapsai <vsapsai@gmail.com>
+
+[extensions]
+extdiff =
+
+[extdiff]
+cmd.gdiff = opendiff
