@@ -51,6 +51,8 @@ else
 	set guifont=Menlo:h11.00
 endif
 
+set guioptions-=T
+
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
