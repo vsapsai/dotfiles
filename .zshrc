@@ -25,4 +25,6 @@ function pman()
 	man -t $1 | open -a Preview -f
 }
 
+alias findit="open -a Finder ."
+
 # Customize to your needs...
