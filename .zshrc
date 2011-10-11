@@ -26,5 +26,6 @@ function pman()
 }
 
 alias findit="open -a Finder ."
+alias mq='hg -R $(hg root)/.hg/patches'
 
 # Customize to your needs...

@@ -2,8 +2,19 @@
 [ui]
 username = Volodymyr Sapsai <vsapsai@gmail.com>
 
+[alias]
+nudge = push --rev .
+
+[diff]
+git = 1
+
 [extensions]
 extdiff =
+bookmarks =
+mq =
 
 [extdiff]
 cmd.gdiff = opendiff
+
+[bookmarks]
+track.current = True
