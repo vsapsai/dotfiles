@@ -1,0 +1,5 @@
+# A bunch of shell commands which I use rarely and always forget.  It is better
+# to keep these commands in a single file, than reading docs every time.
+
+# Binary UUID
+dwarfdump --uuid <path to binary>
