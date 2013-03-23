@@ -1,5 +1,5 @@
 [user]
 	name = Volodymyr Sapsai
 	email = vsapsai@gmail.com
-[diff]
-	external = /Users/vsapsay/.opendiff-git.sh
+[alias]
+	gdiff = difftool --tool=opendiff --no-prompt
