@@ -7,3 +7,7 @@ dwarfdump --uuid <path to binary>
 # hg-git http://hg-git.github.com/
 # In .hg/hgrc [paths] add
 github = git+ssh://git@github.com:vsapsai/dotfiles.git
+
+# == Git ==
+# Unstage the last commit.
+git reset HEAD^
