@@ -28,4 +28,7 @@ function pman()
 alias findit="open -a Finder ."
 alias mq='hg -R $(hg root)/.hg/patches'
 
+# Mercurial requires EDITOR.
+export EDITOR=vim
+
 # Customize to your needs...
