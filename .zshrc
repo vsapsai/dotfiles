@@ -31,4 +31,25 @@ alias mq='hg -R $(hg root)/.hg/patches'
 # Mercurial requires EDITOR.
 export EDITOR=vim
 
+# Keybindings
+#
+# default OS X text navigation shortcuts
+bindkey '^[[1;9D' backward-word      # Option-Left
+bindkey '^[[1;9C' forward-word       # Option-Right
+# Currently Cmd modifier is ignored by shell.  Therefore no shortcuts with Cmd.
+#bindkey '^[[D'    beginning-of-line  # Cmd-Left
+#bindkey '^[[C'    end-of-line        # Cmd-Right
+# Option-Backspace, Cmd-Backspace aren't supported.
+
+# Keybindings Q&A for future myself
+#
+# Q: How do you know that '^[[1;9D' corresponds to Option-Left shortcut?
+# A: You can obtain printable key sequence for various shortcuts by typing 
+#    Ctrl-V before shortcut.  E.g. you type in shell 
+#      Ctrl-V Option-Left
+#    and ^[[1;9D is printed.
+#
+# Q: Where are commands like 'forward-word' are described?
+# A: http://www.gnu.org/software/bash/manual/bashref.html#Bindable-Readline-Commands
+
 # Customize to your needs...
