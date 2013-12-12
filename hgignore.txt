@@ -13,3 +13,6 @@ build*
 # Ignore Vim helper files
 **.un~
 **.swp
+
+# Ignore compiled Python files
+**.pyc
