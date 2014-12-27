@@ -1,0 +1,4 @@
+startup_message off
+
+# Nice tabs.
+hardstatus alwayslastline "%{-b gk}%-w%{+b kg}%50>%n %t%{-b gk}%+w %=%C%<"
