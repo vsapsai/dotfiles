@@ -2,3 +2,14 @@ startup_message off
 
 # Nice tabs.
 hardstatus alwayslastline "%{-b gk}%-w%{+b kg}%50>%n %t%{-b gk}%+w %=%C%<"
+
+# Cheatsheet:
+# * create new tab
+#     Ctrl-a c
+# * switch to a different tab
+#     Ctrl-a <digit>
+#     Ctrl-a '<number consisting of multiple digits>
+# * detach
+#     Ctrl-a d
+# * go to the beginning of the line
+#     Ctrl-a a
