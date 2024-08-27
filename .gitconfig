@@ -3,3 +3,6 @@
 	email = vsapsai@gmail.com
 [alias]
 	gdiff = difftool --tool=opendiff --no-prompt
+
+# Also for global ignore patterns run
+# git config --global core.excludesfile ~/.gitignore_global

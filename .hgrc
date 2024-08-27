@@ -1,6 +1,7 @@
 # This is a Mercurial configuration file.
 [ui]
 username = Volodymyr Sapsai <vsapsai@gmail.com>
+ignore = ~/.hgignore_global
 
 [alias]
 nudge = push --rev .
