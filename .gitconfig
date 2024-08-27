@@ -2,8 +2,10 @@
 	name = Volodymyr Sapsai
 	email = vsapsai@gmail.com
 [alias]
-	gdiff = difftool --tool=opendiff --no-prompt
+    gdiff = difftool --tool=opendiff --no-prompt
     dag = log --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%ar%C(reset)%C(auto)%d%C(reset)%n%s'
+    # Based on https://stackoverflow.com/questions/5188320/how-can-i-get-a-list-of-git-branches-ordered-by-most-recent-commit
+    branches = for-each-ref refs/heads/ --sort=-committerdate --format='%(color:green)%(HEAD)%(color:reset) %(refname:short) (%(color:dim black)%(committerdate:relative)%(color:reset))'
 
 # Also for global ignore patterns run
 # git config --global core.excludesfile ~/.gitignore_global
