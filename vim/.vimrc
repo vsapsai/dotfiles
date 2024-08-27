@@ -9,7 +9,7 @@ set modelines=0
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set noexpandtab
+set expandtab
 
 set encoding=utf-8
 set scrolloff=2
@@ -69,4 +69,3 @@ set backupdir=~/.vim/tmp/backup//
 set directory=~/.vim/tmp/swap//
 set backup
 set noswapfile
-
