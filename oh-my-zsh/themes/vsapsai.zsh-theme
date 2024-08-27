@@ -4,9 +4,11 @@ function prompt_char {
 	echo '$'
 }
 
+local PREVIOUS_EXIT_CODE=%(?.. %{$fg[red]%}(%?%)%{$reset_color%})
+
 ZSH_THEME_GIT_PROMPT_PREFIX=" ["
 ZSH_THEME_GIT_PROMPT_SUFFIX="]"
 
-PROMPT='%{$fg[green]%}%n%{$reset_color%} in %{$fg_bold[blue]%}%~%{$reset_color%}$(git_prompt_info)
+PROMPT='%{$fg[green]%}%n%{$reset_color%} in %{$fg_bold[blue]%}%~%{$reset_color%}$(git_prompt_info)${PREVIOUS_EXIT_CODE}
 $(prompt_char) '
 
