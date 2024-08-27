@@ -3,7 +3,7 @@
 	email = vsapsai@gmail.com
 [alias]
 	gdiff = difftool --tool=opendiff --no-prompt
-    dag = log --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset) - %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%ar%C(reset)%C(auto)%d%C(reset)%n''          %s'
+    dag = log --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%ar%C(reset)%C(auto)%d%C(reset)%n%s'
 
 # Also for global ignore patterns run
 # git config --global core.excludesfile ~/.gitignore_global
