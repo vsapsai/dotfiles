@@ -1,0 +1,2 @@
+lldb:bind '^[[A' ed-search-prev-history
+lldb:bind '^[[B' ed-search-next-history
