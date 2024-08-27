@@ -6,9 +6,19 @@ function prompt_char {
 
 local PREVIOUS_EXIT_CODE=%(?.. %{$fg[red]%}(%?%)%{$reset_color%})
 
-ZSH_THEME_GIT_PROMPT_PREFIX=" ["
-ZSH_THEME_GIT_PROMPT_SUFFIX="]"
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git #svn
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:*' formats ' [%b%u%c]'
+zstyle ':vcs_info:*' actionformats ' [%a|%b%u%c]'
+zstyle ':vcs_info:*' stagedstr '+'
+zstyle ':vcs_info:*' unstagedstr '*'
 
-PROMPT='%{$fg[green]%}%n%{$reset_color%} in %{$fg_bold[blue]%}%~%{$reset_color%}$(git_prompt_info)${PREVIOUS_EXIT_CODE}
+precmd() {
+    vcs_info
+}
+
+setopt prompt_subst
+PROMPT='%{$fg[green]%}%n%{$reset_color%} in %{$fg_bold[blue]%}%~%{$reset_color%}${vcs_info_msg_0_}${PREVIOUS_EXIT_CODE}
 $(prompt_char) '
 
