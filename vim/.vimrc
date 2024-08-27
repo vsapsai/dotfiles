@@ -65,6 +65,11 @@ nnoremap ; :
 
 inoremap jj <ESC>
 
+" Select just pasted text. Based on
+" https://stackoverflow.com/questions/4775088/vim-how-to-select-pasted-block
+" http://vim.wikia.com/wiki/Selecting_your_pasted_text
+nnoremap <expr> gp "`[".getregtype(v:register)[0]."`]"
+
 set undodir=~/.vim/tmp/undo//
 set backupdir=~/.vim/tmp/backup//
 set directory=~/.vim/tmp/swap//
