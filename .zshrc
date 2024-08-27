@@ -35,8 +35,11 @@ export HGENCODING=UTF-8
 # Keybindings
 #
 # default OS X text navigation shortcuts
-bindkey '^[[1;9D' backward-word      # Option-Left
-bindkey '^[[1;9C' forward-word       # Option-Right
+# bindkey '^[[1;9D' backward-word      # Option-Left
+# bindkey '^[[1;9C' forward-word       # Option-Right
+# Or even better to follow advice in https://stackoverflow.com/a/31328973 and
+# change hex codes sent by Option-Left, Option-Right so the shortcut still
+# works in ssh.
 # Currently Cmd modifier is ignored by shell.  Therefore no shortcuts with Cmd.
 #bindkey '^[[D'    beginning-of-line  # Cmd-Left
 #bindkey '^[[C'    end-of-line        # Cmd-Right
