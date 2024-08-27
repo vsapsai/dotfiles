@@ -13,9 +13,15 @@ git = 1
 extdiff =
 bookmarks =
 mq =
+pager =
+progress =
+color =
 
 [extdiff]
 cmd.gdiff = opendiff
 
 [bookmarks]
 track.current = True
+
+[pager]
+pager = LESS='FRX' less
