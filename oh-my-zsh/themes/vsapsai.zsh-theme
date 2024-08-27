@@ -7,6 +7,6 @@ function prompt_char {
 ZSH_THEME_GIT_PROMPT_PREFIX=" ["
 ZSH_THEME_GIT_PROMPT_SUFFIX="]"
 
-PROMPT='%{$fg_bold[green]%}%n%{$reset_color%} in %{$fg_bold[blue]%}%~%{$reset_color%}$(git_prompt_info)
+PROMPT='%{$fg[green]%}%n%{$reset_color%} in %{$fg_bold[blue]%}%~%{$reset_color%}$(git_prompt_info)
 $(prompt_char) '
 
